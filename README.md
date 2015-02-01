@@ -1,5 +1,5 @@
 ## Jekyll
-- the way I like to use it.
+—the way I like to use it.
 
 ````
 # Get started
@@ -23,5 +23,7 @@ fig run mozzjekylll build.sh
 docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 fig build
 
-
 ````
+
+Ideas:
+* move docker stuff (everything except fig.yml?) into subdirectory so this can be like a submodule
