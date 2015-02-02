@@ -24,7 +24,7 @@ git clone -o jekyll-bootstrap https://github.com/mozz100/jekyll-bootstrap.git $A
 cd $APPNAME
 
 # Add your own 'origin' remote. It should be an empty repo.
-git remote add <url> origin
+git remote add origin <your_git_url>
 git push -u origin master
 
 # Get started (takes a little while to download and install ruby containers etc)
