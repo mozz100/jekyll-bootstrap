@@ -1,9 +1,7 @@
 mozzjekyll:
   build: .
-  command: ./serve.sh
+  command: jekyll serve -H 0.0.0.0 --force_polling
   ports:
     - "4000:4000"
   volumes:
     - .:/usr/src/app
-  environment:
-    - MOZZAPP
