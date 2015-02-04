@@ -13,6 +13,7 @@
     {% comment %}
     Include livereload.js from same host on port 35729.
     {% endcomment %}
-	<script>document.write('<script src="//'+ location.hostname + ':35729/livereload.js">\x3C/script>')</script>
+    <!-- DEVELOPMENT_VERSION_DO_NOT_DEPLOY -->
+    <script>document.write('<script src="//'+ location.hostname + ':35729/livereload.js">\x3C/script>')</script>
   {% endif %}
 </head>
