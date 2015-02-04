@@ -9,4 +9,10 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   {% stylesheet main %}
+  {% if site.development %}
+    {% comment %}
+    Include livereload.js from same host on port 35729.
+    {% endcomment %}
+	<script>document.write('<script src="//'+ location.hostname + ':35729/livereload.js">\x3C/script>')</script>
+  {% endif %}
 </head>

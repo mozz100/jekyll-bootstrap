@@ -18,3 +18,4 @@ exclude:
   - fig.yml
   - Dockerfile
   - README.md
+  - Guardfile
