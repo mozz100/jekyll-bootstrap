@@ -1,7 +1,10 @@
 mozzjekyll:
   build: .
-  command: jekyll serve -H 0.0.0.0 --force_polling
+  command: ./_dev_server.sh
   ports:
-    - "4000:4000"
+    - "8080:8080"
+    - "35729:35729"
   volumes:
     - .:/usr/src/app
+  environment:
+    FIGGY: pudding

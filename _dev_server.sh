@@ -1,9 +1,15 @@
 #!/bin/sh
-#http-server _site --silent &
+
+# Start super basic static web server in _site
 ruby -run -e httpd _site -p 8080 > /dev/null 2>&1 &
 SERVER_PID=$!
 
-guard --no-interactions
+# Run guard, using polling if we are in a docker container
+if [ "$FIGGY" = "pudding" ]; then
+  guard --no-interactions --force-polling
+else
+  guard --no-interactions
+fi
 
 echo "Closing down..."
 
