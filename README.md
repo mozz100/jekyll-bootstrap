@@ -31,10 +31,10 @@ git push -u origin master
 fig build
 
 # Run jekyll serve
-fig up  # now browse port 4000 on docker host
+fig up  # now browse port 8080 on docker host
 
 # Develop site. Remember that inotify doesn't work in a docker container
-# so have to rely on polling the file system.
+# so have to rely on polling the file system, which is a bit annoying (slow).
 
 # Build a site for deploy. Results end up in _site/
 fig run mozzjekyll jekyll build
