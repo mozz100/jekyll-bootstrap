@@ -19,3 +19,9 @@ exclude:
   - Dockerfile
   - README.md
   - Guardfile
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+
+minify_html: true

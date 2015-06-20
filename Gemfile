@@ -9,3 +9,7 @@ gem "sprockets-less"
 
 gem "guard-jekyll"
 gem "guard-livereload"
+
+gem "uglifier"
+gem "sass"
+gem "octopress-minify-html"
